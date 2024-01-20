@@ -1,0 +1,277 @@
+.pokemons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 380px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 576px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.pokemon {
+  margin: 0.5rem;
+  padding: 2rem 1rem;
+
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon .name {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.pokemon .number {
+  color: rgb(0, 0, 0);
+  opacity: 0.2;
+  text-align: right;
+  font-size: 0.9rem;
+}
+.detalhes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.pokemon .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pokemon .detail img {
+  border-style: none;
+  height: 80px;
+  align-self: flex-end;
+}
+.pokemon .types {
+  padding: 0 10px 0 0;
+  margin: 0;
+  list-style: none;
+}
+.pokemon .detail .types .type {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.625rem;
+  border-radius: 1rem;
+  margin: 0.25rem 0;
+  filter: brightness(1.08);
+}
+
+.normal {
+  color: white;
+  background-color: #a6a877;
+}
+.grass {
+  color: white;
+  background-color: #50c8be;
+  color: white;
+}
+.fire {
+  color: white;
+  background-color: #ee7f30;
+}
+.water {
+  color: white;
+  background-color: #678fee;
+}
+.electric {
+  background-color: #ddba30;
+  color: black !important;
+}
+.ice {
+  color: white;
+  background-color: #98d5d7;
+}
+.ground {
+  color: white;
+  background-color: #dfbf69;
+}
+.flying {
+  color: white;
+  background-color: #a98ff0;
+}
+.poison {
+  color: white;
+  background-color: #a040a0;
+}
+.fighting {
+  color: white;
+  background-color: #bf3029;
+}
+.psychic {
+  color: white;
+  background-color: #f65687;
+}
+.dark {
+  color: white;
+  background-color: #725847;
+}
+.rock {
+  color: white;
+  background-color: #b8a137;
+}
+.bug {
+  background-color: #a8b720;
+}
+.ghost {
+  color: white;
+  background-color: #6e5896;
+}
+.steel {
+  color: white;
+  background-color: #b9b7cf;
+}
+.dragon {
+  color: white;
+  background-color: #6f38f6;
+}
+.fairy {
+  color: white;
+  background-color: #f9aec7;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.pagination button {
+  background-color: #7b79db;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.status ol li {
+  color: #7a7a7a;
+  padding-top: 0.5rem;
+  font-size: 14px;
+}
+.status {
+  width: 20%;
+}
+.status .estilo2 li {
+  color: #2e2e2e;
+  list-style: none;
+}
+.tipagem {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.625rem;
+  border-radius: 1rem;
+  margin: 0.25rem 0.3rem 0.25rem 0;
+  filter: brightness(1.08);
+  list-style: none;
+  max-width: 3rem;
+  filter: brightness(1.08);
+}
+
+.fundoSobre {
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  margin-top: -3em;
+  border-radius: 1em;
+  padding: 2rem 0 0 0;
+}
+/*
+.baseCard {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}*/
+.baseCard {
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5em;
+}
+.card {
+  width: 30em;
+  height: 35em;
+  border-radius: 1rem;
+}
+
+.divGeral {
+  width: 30em;
+  height: 20em;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+.botaosair {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.cardNome {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.popokemon {
+  box-shadow: 20px 20px 20px 20px #bbbbbb;
+}
+
+.divStatus {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.barra {
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(187, 187, 187);
+  margin: 0.8rem 0 1.28rem;
+  font-size: 14px;
+}
+
+.barrinha {
+  height: 100%;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.olBarra {
+  display: block;
+  list-style: none;
+  width: 50%;
+  padding-inline-start: 0;
+}
